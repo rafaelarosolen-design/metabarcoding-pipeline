@@ -29,17 +29,17 @@ O script `01_dada2_processing.R` implementa o algoritmo do pacote **DADA2**. Dif
 * Modelagem estatística adaptativa das taxas de erro da corrida de sequenciamento (`learnErrors`).
 * Desreplicação e inferência exata de sequências biológicas reais, discriminando erros de leitura do sequenciador.
 
-### 2. Resolução Taxonómica
+### 2. Resolução Taxonômica
 O script `02_dada2_taxonomy.R` realiza a consolidação das matrizes biológicas:
 * Alinhamento e junção das leituras pareadas (*Forward* e *Reverse*).
 * Remoção *de novo* de quimeras (artefatos de PCR).
-* Atribuição taxonómica utilizando algoritmos de classificação baseados em bancos de dados de referência (ex: taxonomia de bactérias ou fungos).
+* Atribuição taxonômica utilizando algoritmos de classificação baseados em bancos de dados de referência (ex: taxonomia de bactérias ou fungos).
 
 ### 3. Ecologia Microbiana e Análise Estatística Downstream
 O script `03_microbial_ecology.R` integra as matrizes geradas utilizando os pacotes **Phyloseq**, **Vegan** e **GGPlot2** para extrair métricas ecológicas:
 * **Diversidade Alfa:** Cálculo de índices de riqueza observada e Shannon para avaliar a complexidade interna das amostras.
 * **Diversidade Beta:** Análises de ordenação espacial (NMDS utilizando distância de Bray-Curtis) para avaliar a variação na composição das comunidades entre diferentes tratamentos ou localizações.
-* **Perfil Taxonómico:** Geração de gráficos de abundância relativa acumulada para visualização da estrutura da comunidade a nível de Filo/Família.
+* **Perfil Taxonômico:** Geração de gráficos de abundância relativa acumulada para visualização da estrutura da comunidade a nível de Filo/Família.
 
 ---
 
